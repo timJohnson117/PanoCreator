@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pano Creator</title>
+
+        <style>
+            body
+            {
+                background-color: black; 
+            }
+
+            h1
+            {
+                background-color:  black;
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 45pt;
+                text-align: center;
+            }
+
+            p
+            {
+                background-color:  black;
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 18pt;
+                text-align: center;
+            }
+
+            input
+            {
+                color: white;
+                font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 30pt;
+            }
+
+            input::-webkit-file-upload-button
+            {
+                background-color: chocolate;
+                border-color: chocolate;
+                color: white;
+                opacity: 85%;
+                border-radius: 10%;
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            input::-webkit-file-upload-button:hover
+            {
+                opacity: 100%;
+            }
+
+            input::-webkit-file-upload-button:active
+            {
+                border-color:  maroon;
+            }
+
+            .btn
+            {
+                font-size:  26pt;
+                background-color: chocolate;
+                border-color: chocolate;
+                color: white;
+                opacity: 85%;
+                border-radius: 10%;
+                padding: 30px;
+                cursor: pointer;
+                margin-right: 75%;
+                position: fixed;
+                box-shadow: darkslategray 10px 10px 10px 10px;                 
+            }
+            
+
+            .btn:hover
+            {
+                opacity: 100%;
+            }
+
+            .btn:active
+            {
+                border-color: maroon;
+            }
+
+            .wrapper1
+            {
+                margin-top: 5%;
+                padding-left: 45%;
+            }
+
+            .wrapper2
+            {
+                padding-left: 40%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+            }
+
+            .wrapper3
+            {
+                padding-left: 10%;
+                padding-top: 10%;
+            }
+        </style>
+    </head>
+        
+    <body>
+        <h1>Pano Creator</h1>
+        <p>Create a panoramic image from 4 source images</p>
+
+        
+            <form method="post" action="upload.php" enctype="multipart/form-data">
+                <div class="wrapper2">
+                <input type="file" name="uploadFiles[]" multiple="multiple"><br /><br />
+                </div>
+                <hr>
+                <div class="wrapper1">
+                    <input class="btn" type="submit" value="upload">
+                </div>
+                
+                
+            </form>
+    </body>
+</html>
